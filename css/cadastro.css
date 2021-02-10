@@ -1,0 +1,60 @@
+/*********TELA LOGIN******/
+body {
+    margin: 0px;
+}
+#bg-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-image: url(../images/fundo-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    height: 900px;
+}
+#content-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 380px;
+    width: 1000px;
+    margin: 0px;
+}
+#content-cadastro h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#cadastro{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 10px 25px;
+    color: rgb(165, 85, 42);
+}
+#nome, #password, #email, #password_test {
+    padding: 5px 0px;
+    margin: 5px 0px;
+    width: 100%;
+    height: 30px;
+    color: rgb(97, 97, 97);
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(97, 97, 97);
+    background-color: rgba(0, 0, 0, 0);
+}
+#botao{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(219, 165, 114, 0.6);
+    border: 1px solid #a77f5a;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #a77f5a;
+}

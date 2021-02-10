@@ -1,0 +1,155 @@
+/* Tela de Pagamento */
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #a77f5a;
+  float:left;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 20px;
+  color: #a77f5a;
+}
+
+#bgpag {
+  background-image: url(../images/fundo-login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#content {
+float: right;
+margin-right: 40px;
+background-image: url(../images/fundo-login.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+#endereco {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 350px;
+  font-family: 'Roboto', sans-serif;
+  width: 700px;
+  height: 430px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C0C0C0;
+  position: relative;
+  text-align: justify;
+}
+
+#name, #email, #CEP, #numero, #complemento, #bairro, #cidade,
+#cname, #ccnum, #expmonth, #expyear, #cvv {
+  height: 40px;
+  width: 100%;
+  color: rgb(97, 97, 97);
+  border-width: 0px 0px 2px 0px;
+  border-color: rgb(97, 97, 97);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#uf {
+  color: #808080;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #333;
+  font-size: 19px;
+  padding-right: 20px;
+}
+
+#pagamento {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 350px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  width: 700px;
+  height: 410px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C0C0C0;
+  position: relative;
+}
+
+#carrinho {
+  display: inline-block;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 350px;
+  font-family: 'Roboto', sans-serif;
+  width: 700px;
+  height: 300px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C0C0C0;
+  position: relative;
+  text-align: center;
+}
+
+#tabela {
+  font-family: 'Roboto', sans-serif;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #C0C0C0;
+  text-align: center;
+  width: 100%;
+
+}
+
+#total {
+  font-family: 'Roboto', sans-serif;
+  float: right;
+  margin-top: 10px;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  background: #dba572;
+  border-radius: 25px;
+  border: 1px solid #a77f5a;
+  color: #856548;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-right: 300px;
+  float: right;
+}
+
+.button:hover, .button2:hover {
+  background: #631919;
+  text-decoration: none;
+}
+
+.button2 {
+  font-family: 'Roboto', sans-serif;
+  background: #dba572;
+  border-radius: 25px;
+  border: 1px solid #a77f5a;
+  color: #856548;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  float: right;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Finalizar compra</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/pagamento.css">
+</head>
+
+<body>
+
+  <!-- begin header -->
+  <header>
+    <img id="logo" src="images/logo.png" alt="logo" height="100px">
+    <div class="texto-header">
+    <h2>venda online do melhor do café brasileiro.</h2>
+
+
+    <a href="index.html">home</a>
+    <a href="Lista-produtos.html">conheça nossos produtos</a>
+    <a href="projeto1.html">fale com a gente</a>
+    <a href="pagamento.html">pagamento</a>
+      <a href="cadastro.html">cadastro</a>
+    <a href="login.html">login</a>
+  </div>
+  </header>
+  <!-- end header -->
+
+<!-- begin cart -->
+<div id="bgpag">
+<div id="carrinho">
+  <h1>Finalizar compra :)</h1>
+  <form name="Lista de Compras" id="form1" action="http://web1-app.tadsufpr.net.br/test/form" method="post">
+
+<table id="tabela">
+  <tr>
+    <td><b>Quantidade</b></td>
+    <td><b>Nome do produto</b></td>
+    <td><b>Valor</b></td>
+    <td><b>Total</b></td>
+
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Café com leite 3 Corações</td>
+    <td>R$15.00</td>
+    <td>R$15.00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Café do Ponto</td>
+    <td>R$7.00</td>
+    <td>R$21.00</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Café Pelé</td>
+    <td>R$5.00</td>
+    <td>R$R$25.00</td>
+  </tr>
+</table>
+  <div id="total">
+    Total: <b>R$61.00</b><br><br>
+      <label><input type="button" value="Remover" class="button2"><br>
+        <font size="2px">*Remove todos os itens</font><br><br>
+
+      </label>
+    </div>
+</div>
+<!-- end cart -->
+
+    <!-- begin address info -->
+    <div class="content">
+    <div class="row" id="endereco">
+      <div class="col-50">
+        <h3>Endereço</h3>
+        <label for="name"></label>
+        <input type="text" id="name" name="Nome" placeholder="Nome completo" required>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email (example@example.com)" required>
+        <div class="row">
+          <div class="col-50">
+            <label for="CEP"></label>
+            <input type="text" id="CEP" name="CEP" placeholder="CEP (XXXXX-XXX)" required>
+          </div>
+          <div class="col-50">
+            <label for="numero"></label>
+            <input id="numero" type="number" placeholder="Número (+55 DDD XXXX-XXXX)" required />
+            <label for="complemento"></label>
+            <input id="complemento" type="text" placeholder="Complemento" />
+          </div>
+          <div class="col-50">
+            <label for="bairro"></label>
+            <input id="bairro" type="text" placeholder="Bairro" required />
+            <label for="cidade"><i></i></label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+          </div><br>
+          <div class="col-50">
+            <label for="uf"><font color="#808080" size="2px">Selecione o estado:</font></label>
+            <select id="uf">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+          </div>
+          </div>
+        </div>
+  </form>
+</div>
+</div>
+  <!-- end address info -->
+
+  <!-- begin payment info -->
+  <form id="pagamento" action="http://web1-app.tadsufpr.net.br/test/form" method="post">
+    <div class="col-50">
+      <h3>Pagamento</h3>
+      <label for="cname"></label>
+      <input type="text" id="cname" name="nome cartao" placeholder="Nome completo"required>
+      <label for="ccnum"></label>
+      <input type="text" id="ccnum" name="numero cartao" placeholder="Número do cartão (XXXX XXXX XXXX XXXX)" required>
+      <div class="row">
+        <div class="col-50">
+          <label for="expmonth"></label>
+          <input type="number" id="expmonth" name="expmonth" placeholder="Mês de validade (MM)" required>
+          <label for="expyear"></label>
+          <input type="number" id="expyear" name="expyear" placeholder="Ano de validade (AA)" required>
+        </div>
+        <div class="col-50">
+          <label for="cvv"></label>
+          <input type="number" id="cvv" name="cvv" placeholder="Código de segurança (XXX)" required>
+        </div>
+      </div><br>
+      <label>
+        <input type="checkbox" checked="checked" name="mesmo endereço">
+        <font color="#808080" size="2px">Mesmo endereço de entrega!</font>
+      </label><br>
+</div>
+
+
+
+</form>
+
+<div id="botao">
+<input type="submit" value="Confirmar" class="button">
+</div>
+<br><br>
+
+  <!-- end payment info -->
+
+  <!-- begin footer -->
+  <footer>
+    <h4>contato</h4>
+    <p class="footer">© 2021, nossa loja><br>universidade federal do paraná <br>curitiba, pr <br>whatsapp: (41) 99677-6446<br>cnpj: 12.345.678/0001-90 <br>nossaloja@gmail.com <br> indústria brasileira</p><a href="projeto1.html" class="btn btn-template-main" class="footer">vá para a página de contato</a>
+    <p class="footer">© 2021, nossa loja</p>
+    </div>
+    <p class="footer">desenvolvimento web feito por nós. :)</p>
+  </footer>
+
+  <!-- end footer -->
+  </div>
+</body>
+
+</html>
